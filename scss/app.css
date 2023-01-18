@@ -1,0 +1,29 @@
+button {
+  color: yellow;
+  background-color: rgb(112, 57, 57);
+  padding: 1rem;
+}
+
+p {
+  color: rgb(112, 57, 57);
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #0e461a;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul li {
+  color: yellow;
+}
+nav ul button:hover {
+  rotate: 30deg;
+}/*# sourceMappingURL=app.css.map */

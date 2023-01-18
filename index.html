@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/app.css">
+    <title>Document</title>
+
+</head>
+<body>
+    <nav>
+        <img src="https://placekitten.com/100/50" alt="">
+        <ul>
+            <li>Home</li>
+            <li>Store</li>
+            <li>About us</li>
+            <button>Click me</button>
+        </ul>
+        
+    </nav>
+    <main>
+        <div>
+            <div>
+                <img src="https://placekitten/300/200" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni totam unde, maiores reprehenderit atque pariatur distinctio, voluptatum iste ut veniam doloremque, nesciunt voluptatem deleniti culpa commodi voluptates harum voluptate fuga?</p>
+            </div>
+            <button onclick="removeDiv(event)">remove</button>
+        </div>
+        <div>
+            <img src="https://placekitten/300/200" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni totam unde, maiores reprehenderit atque pariatur distinctio, voluptatum iste ut veniam doloremque, nesciunt voluptatem deleniti culpa commodi voluptates harum voluptate fuga?</p>
+            <button onclick="removeDiv(event)">remove</button>
+        </div>
+    </main>
+
+    <script>
+        const removeDiv = (elem) =>{
+            //elem.target.parentNode.remove()
+            let counter = 0
+            if(elem.target.innerText === "remove"){
+                elem.target.previousElementSibling.style.display = "none"
+                counter += 1
+                if(counter === 1){
+                    window.alert('Hai nascosto la sezione ' + counter + 'volta')
+                } else {
+                    window.alert('Hai nascosto la sezione ' + counter + 'volte')
+                }
+                elem.target.innerText = "show"
+                console.log(counter)
+            } else {
+                elem.target.previousElementSibling.style.display = "block"
+                elem.target.innerText = "remove"
+                console.log(counter)
+            }
+        
+            
+
+        }
+    </script>
+
+</body>
+</html>

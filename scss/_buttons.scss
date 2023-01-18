@@ -1,0 +1,30 @@
+button{
+    color:$secondary-color;
+    background-color: $button-c;
+    padding: $button-p;
+}
+p{
+    color:$button-c
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $primary-color;
+    ul{
+        list-style-type: none;
+        margin:0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        li{
+            color:$secondary-color;
+        }
+        button{
+            &:hover{
+                rotate: (30deg);
+            }
+        }
+    }
+}
